@@ -1,8 +1,6 @@
 import re
 from collections import Counter
 def checkio(text: str) -> str:
-    count = Counter(re.findall("[a-z]", text.lower())).most_common()
-    result = min(count, key=lambda x: (-x[1], x[0]))
     return result[0]
 
 
